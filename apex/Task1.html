@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color:pink;
+            margin : 20px;
+            padding: 20px;
+            color: #333;
+        }
+        h1{
+            color: lightcyan;
+            text-align: center;
+        }
+        p{
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        img{
+            width: 300px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+        a{
+            color:red;
+            text-decoration: none;           
+        }
+        button{
+            display: block;
+            margin: 30px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color:yellowgreen;
+            color: red;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: black;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>Hello and welcome!</h1>
+
+        <p> This is a basic webpage created using HTML for content, css for styling, and javascript for a little fun interactivity.</p>
+
+        <p>Here's a peaceful nature photo just to make your day better: </p>
+        <img src="./nature.jpeg" alt="Nature Image">
+
+        <p>If you're curious to learn more about web development, check out<a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank">MDN Web Docs</a></a></p>
+
+        <button onclick="showAlert()">Click Me to say Hi!</button>
+
+        <script> function showAlert() {
+            alert("Hii there! Thanks for clicking the button😊");
+        }
+            </script>
+
+
+    
+    </script>
+
+
+    </body>
+    </html>
