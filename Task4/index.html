@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio + Apps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>My Portfolio & Mini Apps</h1>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+  <a href="#todo">To-Do App</a>
+  <a href="#products">Product Listing</a>
+</nav>
+
+<main>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am a passionate web developer skilled in HTML, CSS, and JavaScript. This portfolio showcases my work and some interactive web apps.</p>
+  </section>
+
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Responsive Portfolio Website</li>
+      <li>To-Do App with Local Storage</li>
+      <li>Product Listing with Filtering</li>
+    </ul>
+  </section>
+
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required><br><br>
+      <input type="email" placeholder="Your Email" required><br><br>
+      <textarea placeholder="Message" required></textarea><br><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <section id="todo">
+    <h2>To-Do List</h2>
+    <input type="text" id="todoInput" placeholder="Enter a task" />
+    <button onclick="addTodo()">Add</button>
+    <div id="todoList"></div>
+  </section>
+
+
+  <section id="products">
+    <h2>Products</h2>
+    <label>Filter by category:
+      <select id="categoryFilter">
+        <option value="all">All</option>
+        <option value="tech">Tech</option>
+        <option value="fashion">Fashion</option>
+      </select>
+    </label>
+    <label>Sort by:
+      <select id="sortBy">
+        <option value="none">None</option>
+        <option value="price">Price</option>
+        <option value="rating">Rating</option>
+      </select>
+    </label>
+    <div class="products" id="productList"></div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
